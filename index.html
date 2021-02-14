@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALIFICACIONES</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>
+            Calculo de calificaciones
+        </h1>
+        <form action="" name="valores">
+            <h2>Examen menor o igual a 50</h2>
+            <input id="examen" type="number" placeholder="nota"  min="0" max="50">
+            <h2>Plataforma menor o igual a 20</h2>
+            <input id="plataforma" type="number" placeholder="nota" min="0" max="20">
+            <h2>Trabajo final menor o igual a 20</h2>
+            <input id="trabajo" type="number" placeholder="nota" min="0" max="20">
+            <h2>Actitudes y Valores menor o igual a 10</h2>
+            <input id="valores" type="number" placeholder="nota" min="0" max="10">    
+        </form>
+        <input type="button" value="CALCULAR NOTA" onclick="nota()">  
+        <h3>Total:</h3> <h4 id="resultado"></h4>
+    </div>
+</body>
+</html>
