@@ -30,3 +30,26 @@ var sumavalores = examen+plataforma+trabajo+valores
     }
 }
 
+// GALERIA
+
+var zFondos150 = ["url('foto1-150.jpg')","url('foto2-150.jpg')","url('foto3-150.jpg')","url('foto4-150.jpg')"];
+var zFondos600 = ["url('foto1-600.jpg')","url('foto2-600.jpg')","url('foto3-600.jpg')","url('foto4-600.jpg')"];
+
+var imagenPrincipal = document.querySelectorAll(".imagen-principal")[0];
+var subImagenes = document.querySelectorAll('[class *= "subImagen-"]');
+
+imagenPrincipal.style.backgroundImage =zFondos600[0];
+subImagenes[0].style.backgroundImage =zFondos150[0];
+subImagenes[1].style.backgroundImage =zFondos150[1];
+subImagenes[2].style.backgroundImage =zFondos150[2];
+subImagenes[3].style.backgroundImage =zFondos150[3];
+
+subImagenes[0].addEventListener("mouseover",accion0);
+subImagenes[1].addEventListener("mouseover",accion1);
+subImagenes[2].addEventListener("mouseover",accion2);
+subImagenes[3].addEventListener("mouseover",accion3);
+
+function accion0(){imagenPrincipal.style.backgroundImage =zFondos600[0];}
+function accion1(){imagenPrincipal.style.backgroundImage =zFondos600[1];}
+function accion2(){imagenPrincipal.style.backgroundImage =zFondos600[2];}
+function accion3(){imagenPrincipal.style.backgroundImage =zFondos600[3];}
